@@ -1,1 +1,15 @@
-testing
+name: "Publish to workflow from CA"
+description: "calling this compositeaction in another workflow"
+
+inputs:
+  username:
+    description: "Username for test"
+    required: true    
+
+runs:
+  using: "composite"
+  steps:
+      - name: Just checking
+        shell: bash
+        run: echo "testing composite action called in another workflow!!"
+          
