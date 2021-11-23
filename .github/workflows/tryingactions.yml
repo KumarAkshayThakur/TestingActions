@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: running a one line sccript
-        run : echo Hello, Akshay
+        run : echo Hello, Akshay kumar
       
       #Below  is the composite action usage 
       - name: running composite action
