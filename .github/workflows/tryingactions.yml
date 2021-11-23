@@ -5,11 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-      - run: npm install -g bats
-      - run: bats -v
+      - name: running a one line sccript
+        run : echo Hello, Akshay
+      
       #Below  is the composite action usage 
       - name: running composite action
         uses: KumarAkshayThakur/CompositeAction@main 
+      
+      #Below is using resuable workflow
+      - name: running reusable workflow
+        uses: KumarAkshayThakur/ReusableWorkflow/.github/workflows/reusableworkflow.yml@main
