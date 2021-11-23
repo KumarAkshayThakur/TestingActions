@@ -15,4 +15,5 @@ jobs:
       
       #Below is using resuable workflow
   test: 
+    needs: [check-bats-version]
     uses: KumarAkshayThakur/ReusableWorkflow/.github/workflows/reusableworkflow.yml@main
