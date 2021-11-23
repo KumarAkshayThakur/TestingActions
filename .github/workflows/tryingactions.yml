@@ -1,8 +1,8 @@
-name: learn-github-actions
+name: GithubActions
 on: [push,workflow_dispatch]
 #on: [workflow_dispatch]
 jobs:
-  check-bats-version:
+  checkgithubactions:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -15,5 +15,5 @@ jobs:
       
       #Below is using resuable workflow
   test: 
-    needs: [check-bats-version]
+    needs: [checkgithubactions]
     uses: KumarAkshayThakur/ReusableWorkflow/.github/workflows/reusableworkflow.yml@main
