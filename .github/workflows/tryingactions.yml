@@ -11,4 +11,4 @@ jobs:
       - run: npm install -g bats
       - run: bats -v
       - name: running composte action
-        uses: ./.github/CompositeAction/action.yml
+        uses: KumarAkshayThakur/CompositeAction@main
