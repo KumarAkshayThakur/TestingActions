@@ -13,5 +13,5 @@ jobs:
         uses: KumarAkshayThakur/CompositeAction@main 
       
       #Below is using resuable workflow
-      - name: running reusable workflow
-        uses: KumarAkshayThakur/ReusableWorkflow/.github/workflows/reusableworkflow.yml@main
+  test: 
+    uses: KumarAkshayThakur/ReusableWorkflow/.github/workflows/reusableworkflow.yml@main
