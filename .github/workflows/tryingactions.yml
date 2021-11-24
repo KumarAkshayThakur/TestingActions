@@ -20,3 +20,6 @@ jobs:
   test1:
     needs: [test]
     uses: KumarAkshayThakur/ReusableWorkflow/.github/workflows/main.yml@main
+  test2:
+    needs: [test1]
+    uses: KumarAkshayThakur/ReusableWorkflow/.github/workflows/codeql-analysis.yml@main
