@@ -17,3 +17,6 @@ jobs:
   test: 
     needs: [checkgithubactions]
     uses: KumarAkshayThakur/ReusableWorkflow/.github/workflows/reusableworkflow.yml@main
+  test1:
+    needs: [test]
+    uses: KumarAkshayThakur/ReusableWorkflow/.github/workflows/main.yml@main
